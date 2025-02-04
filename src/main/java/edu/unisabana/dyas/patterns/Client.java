@@ -8,5 +8,6 @@ public class Client {
         AdvancedAudioPlayer advancedPlayer = new AdvancedAudioPlayer();
         advancedPlayer.playMp4("video.mp4");
         advancedPlayer.stop();
+        //cambios sin importancia
     }
 }
