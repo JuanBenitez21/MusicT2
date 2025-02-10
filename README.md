@@ -22,32 +22,5 @@ Actúa como un adaptador que permite que la interfaz `AudioPlayer` utilice la fu
 #### `Client` (Clase):
 Ejemplo de cómo utilizar la interfaz `AudioPlayer` con el adaptador.
 
-### Uso del Código:
+<img width="955" alt="Captura de pantalla 2025-02-10 a la(s) 1 48 32 p  m" src="https://github.com/user-attachments/assets/260220bf-8fbf-42e5-9c8e-135abfb93d82" />
 
-Crea una instancia de `AudioPlayer` utilizando el adaptador `AdvancedAudioPlayerAdapter`.
-Llama a los métodos `play` y `stop` de `AudioPlayer` para reproducir y detener archivos de audio, respectivamente.
-
-```java
-AudioPlayer audioPlayer = new AdvancedAudioPlayerAdapter(new AdvancedAudioPlayer());
-audioPlayer.play("mp4", "video.mp4");
-audioPlayer.stop();
-```
-
-### Resultado Esperado:
-El adaptador debería permitir al `AudioPlayer` reproducir archivos utilizando la funcionalidad avanzada de `AdvancedAudioPlayer` sin cambiar el código existente del reproductor de audio.
-
-Ejemplo de cómo utilizar la interfaz AudioPlayer con el adaptador.
-
-Recuerde los comandos para la ejecución del programa
-
-Para compilar
-
-```bash
-mvn compile
-```
-
-Para ejecutar la aplicación:
-
-```bash
-mvn exec:java -Dexec.mainClass=main.java.edu.unisabana.dyas.patterns.Client
-```
